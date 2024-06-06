@@ -1,67 +1,95 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     user-select: none;
 }
 
-body{
+body {
     background-color: #111827;
     font-family: "Inter", sans-serif;
 }
 
-.container{
-    display: grid;
-    max-width:320px;
-    margin:20px auto;
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 20px auto;
+    padding:0;
 }
 
-img{
-    max-width:75px;
-    margin:0 auto;
+img {
+    max-width: 75px;
+    margin: 0 auto;
 }
 
 h2,
-h3{
-    color:#ffffff;
+h3 {
+    color: #ffffff;
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
 }
 
+.input__field{
+    display: flex;
+    flex-direction: row;
 
-textarea{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+}
+textarea {
     background-color: #444059;
-    color:rgb(154, 153, 153);
+    color: rgb(154, 153, 153);
     border: none;
-    border-radius:8px;
-    padding:10px;
+    border-radius: 8px;
+    padding: 10px;
     block-size: 100px;
-    margin:0 0 14px;
+    margin: 0 0 14px;
     resize: none;
 }
 
-button{
-    background-color: #28A9F1;
-    border:none;
+input {
+    width:125px;
+    background-color: #444059;
+    color: rgb(154, 153, 153);
+    border: none;
     border-radius: 8px;
-    padding:15px;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 20px;
-    font-weight:bold;
-
+    padding: 15px;
+    margin-bottom: 14px;
 }
 
-ul{
-    padding:0;
-    display: grid;
-    gap:10px;
+button {
+    background-color: #28A9F1;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:is(:hover, :focus) {
+    background-color: #075985;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
     list-style-type: none;
-    margin:0;
+    margin: 0;
     color: #ffffff;
 }
 
-ul li{
+ul li {
     background-color: white;
-    border:none;
-    padding:15px;
-    color:black
+    border: none;
+    padding: 15px;
+    color: black
 }
