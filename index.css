@@ -47,7 +47,17 @@ button{
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
     font-weight:bold;
+    box-shadow: 3px 3px 4px #28A9F1;
+    cursor:pointer;
+}
 
+button:is(:hover,:focus){
+    background-color:#075985 ;
+}
+
+button:active{
+    background-color:#075985 ;
+    box-shadow: 3px 3px 4px black;
 }
 
 ul{
